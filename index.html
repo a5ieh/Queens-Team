@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الفصول التفاعلية 3D</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<audio id="bg-music" loop>
+  <source src="sounds/background.mp3" type="audio/mp3">
+</audio>
+<audio id="door-sound">
+  <source src="sounds/door.mp3" type="audio/mp3">
+</audio>
+
+<div id="menu">
+  <h1>اختر المادة</h1>
+  <button onclick="loadClass('biology')">أحياء</button>
+  <button onclick="loadClass('chemistry')">كيمياء</button>
+  <button onclick="loadClass('physics')">فيزياء</button>
+  <button onclick="loadClass('history')">تاريخ</button>
+  <button onclick="loadClass('tech')">تقنية</button>
+  <button onclick="loadClass('math')">رياضيات</button>
+</div>
+
+<div id="container"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.157.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.157.0/examples/js/loaders/GLTFLoader.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
